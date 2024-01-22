@@ -1,9 +1,12 @@
-import Image from "next/image";
+import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
+const SetupPage = () => {
   return (
-    <main>
+    <main className="p-4 flex flex-row gap-4">
+      <UserButton afterSignOutUrl="/" />
       <h1>Admin Panel Dashboard</h1>
     </main>
   );
-}
+};
+
+export default SetupPage;
